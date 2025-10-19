@@ -1,14 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "哪吒加速器 For Windows",
+    "description": "梯子猫 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
-	"apihost": "https://pub-880ac86f33544975b54fb5f5aab7ecb8.r2.dev/host.json",
     "license": "Apache-2.0",
     "build": {
-        "productName": "哪吒加速器",
+        "productName": "梯子猫",
         "extraResources": [
             {
                 "from": "../libs/win32",
