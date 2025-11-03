@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "梯子猫 For Windows",
+    "description": "LeflyCloud For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "梯子猫",
+        "productName": "LeflyCloud",
         "extraResources": [
             {
                 "from": "../libs/win32",
