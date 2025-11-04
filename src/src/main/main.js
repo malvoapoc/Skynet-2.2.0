@@ -52,7 +52,7 @@ if (isDev) {
 }
 isNoPack && (__libname = path.dirname(path.dirname(__dirname)))
 var __static = path.join(__libname, 'extra', 'static')
-const _appname = 'xigua',
+const _appname = 'Gudao',
   appConfigDir = path.join(app.getPath('appData'), _appname),
   logPath = path.join(appConfigDir, 'app_client.log'),
   confPath = path.join(os.homedir(), '.config'),
