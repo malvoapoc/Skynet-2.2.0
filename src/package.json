@@ -1,6 +1,6 @@
 {
     "name": "Skynet",
-    "version": "2.1.7",
+    "version": "4.1.11",
     "description": "LeflyCloud For Windows",
     "main": "src/main/main.js",
     "repository": "",
