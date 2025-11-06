@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "猫咪火箭云 For Windows",
+    "description": "西柚云加速 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "猫咪火箭云",
+        "productName": "西柚云加速",
         "extraResources": [
             {
                 "from": "../libs/win32",
