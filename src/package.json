@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "西柚云加速 For Windows",
+    "description": "星链云 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "西柚云加速",
+        "productName": "星链云",
         "extraResources": [
             {
                 "from": "../libs/win32",
@@ -18,28 +18,6 @@
                 "to": "./"
             }
         ],
-        "dmg": {
-            "background": "../build/dmg-background.tiff",
-            "contents": [
-                {
-                    "x": 440,
-                    "y": 150,
-                    "type": "link",
-                    "path": "/Applications"
-                },
-                {
-                    "x": 160,
-                    "y": 150,
-                    "type": "file"
-                }
-            ]
-        },
-        "mac": {
-            "target": "dmg",
-            "x64ArchFiles": "*",
-            "artifactName": "${productName}_setup_${version}.${ext}",
-            "icon": "../res/icon.icns"
-        },
         "win": {
             "icon": "../res/icon.ico",
 			"requestedExecutionLevel": "highestAvailable",
