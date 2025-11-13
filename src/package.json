@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "CatBox For Windows",
+    "description": "土豆加速 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "CatBox",
+        "productName": "土豆加速",
         "extraResources": [
             {
                 "from": "../libs/win32",
