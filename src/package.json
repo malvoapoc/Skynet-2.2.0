@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "星链云 For Windows",
+    "description": "CatBox For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "星链云",
+        "productName": "CatBox",
         "extraResources": [
             {
                 "from": "../libs/win32",
