@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "土豆加速 For Windows",
+    "description": "三星云 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "土豆加速",
+        "productName": "三星云",
         "extraResources": [
             {
                 "from": "../libs/win32",
