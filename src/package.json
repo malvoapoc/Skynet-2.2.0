@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "三星云 For Windows",
+    "description": "Miaoix For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "三星云",
+        "productName": "Miaoix",
         "extraResources": [
             {
                 "from": "../libs/win32",
