@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "大炫Max For Windows",
+    "description": "SENNET For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "大炫Max",
+        "productName": "SENNET",
         "extraResources": [
             {
                 "from": "../libs/win32",
