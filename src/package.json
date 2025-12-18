@@ -1,13 +1,14 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "SENNET For Windows",
+    "description": "万象云 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
+    "productName": "万象云",
     "build": {
-        "productName": "SENNET",
+        "productName": "万象云",
         "extraResources": [
             {
                 "from": "../libs/win32",
