@@ -1,14 +1,14 @@
 {
     "name": "Skynet",
-    "version": "2.1.7",
-    "description": "万象云 For Windows",
+    "version": "2.1.8",
+    "description": "智连云 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
-    "productName": "万象云",
+    "productName": "智连云",
     "build": {
-        "productName": "万象云",
+        "productName": "智连云",
         "extraResources": [
             {
                 "from": "../libs/win32",
