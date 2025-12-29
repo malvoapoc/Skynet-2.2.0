@@ -1,14 +1,14 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "HK-BEUP For Windows",
+    "description": "Thenlink For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
-    "productName": "HK-BEUP",
+    "productName": "Thenlink",
     "build": {
-        "productName": "HK-BEUP",
+        "productName": "Thenlink",
         "extraResources": [
             {
                 "from": "../libs/win32",
