@@ -306,7 +306,7 @@ function createWindow() {
 
 	const loadFile = isDev ? "app.html" : "app.html";
 	mainWindow.loadFile(loadFile);
-      mainWindow.webContents.openDevTools();
+
 	if (!isDev) {
 		mainWindow.once("ready-to-show", () => {
 			mainWindow.show();
