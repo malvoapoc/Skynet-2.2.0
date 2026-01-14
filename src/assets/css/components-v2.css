@@ -5713,8 +5713,10 @@ select {
     font-weight: 600
 }
 
+/*2.1.7add*/
 .font-extrabold {
-    font-weight: 800
+    /*font-weight: 800*/
+    font-weight: 500
 }
 
 .uppercase {

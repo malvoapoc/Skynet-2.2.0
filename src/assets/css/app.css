@@ -7,12 +7,17 @@ html, body, #app {
     overflow: hidden;
 }
 
+
 * {
     /*font-family: "PingFangRegular";*/
     /*font-size: 13px;*/
     min-font-size: 13px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    /* Windows 字体渲染优化 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .themes {
@@ -127,41 +132,36 @@ html, body, #app {
 /*}*/
 
 @font-face {
-    font-family: "PingFangSemibold";
+    font-family: "TwemojiCountryFlags";
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/PingFangSC-Regular.ttf') format('truetype')
+    src: url('../fonts/TwemojiCountryFlags.woff2') format('woff2')
 }
 
-@font-face {
-    font-family: "PingFangLight";
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/PingFangSC-Regular.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: "PingFangRegular";
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/PingFangSC-Regular.ttf') format('truetype')
+/* 使用系统字体替代大字体文件，提高加载性能 - Windows优化版 */
+.PingFangRegular, [class*="PingFang"] {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", "Hiragino Sans GB", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 
 .ftSemibold {
-    /*font-family: "PingFangRegular";*/
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
 }
 
 .ftMedium {
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
 }
 
 .ftLight {
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
 }
 
 .ftRegular {
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
 }
 
 .initDom div{
@@ -728,7 +728,8 @@ html::-webkit-scrollbar {
 .toast-container {
     color: #fff;
     font-size: 14px;
-    font-family: "PingFangMedium";
+    font-family: "PingFangRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
 }
 
 .newCtrlContainer .controllBox {
@@ -1028,7 +1029,7 @@ html::-webkit-scrollbar {
     color: #92959e;
     text-align: center;
     font-size: 15px;
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     cursor: default;
 }
 
@@ -1155,7 +1156,7 @@ html::-webkit-scrollbar {
 
 .getEmailCode {
     font-size: 10px;
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 30px;
     text-align: center;
     width: 20% !important;
@@ -1503,7 +1504,7 @@ html::-webkit-scrollbar {
     transform: translateX(-50%);
     font-size: 20px;
     font-weight: bold;
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .newHome .statusTips {
@@ -1527,7 +1528,7 @@ html::-webkit-scrollbar {
     color: #1C3957;
     text-align: center;
     font-size: 14px;
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     letter-spacing: 1px;
     margin: 7px 0 0 0;
 }
@@ -1597,7 +1598,7 @@ html::-webkit-scrollbar {
     vertical-align: middle;
     color: #191C32;
     margin: 0;
-    font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+    font-family: 'TwemojiCountryFlags','NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
     text-align: center;
@@ -1633,7 +1634,7 @@ html::-webkit-scrollbar {
     right: 13px;
     display: inline-flex;
     font-size: 13px;
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: middle;
@@ -1708,7 +1709,7 @@ html::-webkit-scrollbar {
     position: absolute;
     right: 0;
     width: 100%;
-    width: 88.8%;
+    width: 88.99%;
     height: 100%;
     bottom: 0;
     transition: all .5s;
@@ -1957,7 +1958,7 @@ html::-webkit-scrollbar {
 }
 
 .newNews .newItem img {
-    height: auto;
+    height: 100px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin: 0 auto;
@@ -2027,7 +2028,8 @@ html::-webkit-scrollbar {
     color: #191C32;
     opacity: 0.6;
     font-size: 13px !important;
-    font-family: "PingFangLight";
+    font-family: "PingFangRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
 }
 
 
@@ -2041,7 +2043,7 @@ html::-webkit-scrollbar {
 
 .newNews .tosGuideList .tosGuideText {
     height: 70%;
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 14px;
     color: #191C32;
     border-radius: 5px;
@@ -2285,7 +2287,7 @@ html::-webkit-scrollbar {
 }
 
 .About .textContext div {
-    font-family: "PingFangRegular";
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "Segoe UI", "PingFang SC", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 14px;
     color: #5E7389;
 }
@@ -2313,7 +2315,8 @@ html::-webkit-scrollbar {
 }
 
 .About .aboutItem p {
-    font-family: 'PingFangMedium';
+    font-family: "PingFangRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
     color: #191C32;
     width: 90%;
     font-size: 16px;
@@ -3123,6 +3126,68 @@ webview {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))
 }
 
+/*2.1.7add*/
+
+#bar-with-underline-4{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.ticketContainer {
+    width: 88.89%;
+    z-index: 40;
+}
+
+.border-blue-500 {
+    border-color: var(--color-blue-500);
+}
+
+.w89{
+    width: 89.9%;
+}
+
+.bluegrad{
+    --tw-gradient-from: var(--app-theme-color);
+    /*background: linear-gradient(to left top, var(--app-theme-color), rgb(from var(--app-theme-color) r g b / 70%));*/
+    background: var(--app-theme-color);
+}
+
+.accountInfolist{
+    height: 80%!important;
+}
+
+.peer:checked ~ .peer-checked\:bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:border-red-500 {
+    --tw-border-opacity: 1;
+    border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:bg-yellow-500{
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:border-yellow-500 {
+    --tw-border-opacity: 1;
+    border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:bg-green-500{
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:border-green-500 {
+    --tw-border-opacity: 1;
+    border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+}
+
+/*2.1.7add*/
+
 .cemerald400 {
     color: var(--color-emerald-400)
 }
@@ -3140,11 +3205,20 @@ webview {
     top: 50%;
 }
 
+/*2.1.7*/
+
+.ml-12 {
+    margin-left: 3rem
+}
+
+.mr-12 {
+    margin-right: 3rem
+}
+
 .mtydn {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    /* 现代浏览器使用逻辑属性 */
-    padding-block: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-block: 0.7rem;
 }
 
 /* 添加佣金列表动画 */

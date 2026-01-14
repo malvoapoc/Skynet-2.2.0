@@ -1,14 +1,16 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "HAIYU For Windows",
+    "description": "旧云 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
-    "productName": "HAIYU",
+    "productName": "旧云",
     "build": {
-        "productName": "HAIYU",
+        "productName": "旧云",
+        "appId": "com.Skynet.Maker",
+        "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
             {
                 "from": "../libs/win32",
@@ -29,6 +31,7 @@
         "nsis": {
             "oneClick": false,
             "perMachine": true,
+            "allowElevation": true,
             "allowToChangeInstallationDirectory": true
         }
     },
@@ -37,7 +40,7 @@
         "child_process": "^1.0.2",
         "default-gateway": "^6.0.0",
         "electron-notarize": "^1.2.1",
-        "electron-updater": "^5.2.1",
+        "electron-updater": "^6.6.2",
         "fs-extra": "^10.1.0",
         "http": "0.0.1-security",
         "js-yaml": "^4.0.0",
