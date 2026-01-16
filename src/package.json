@@ -1,7 +1,7 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "旧云 For Windows",
+    "description": "Skynet For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
