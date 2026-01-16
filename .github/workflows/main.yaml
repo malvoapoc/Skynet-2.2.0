@@ -27,7 +27,7 @@ jobs:
         
     - name: electron-builder on Windows
       run: |
-        npx electron-builder build --win --a32
+        npx electron-builder build --win
         
     - name: Upload artifacts on Windows
       uses: actions/upload-artifact@v4

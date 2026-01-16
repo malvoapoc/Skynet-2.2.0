@@ -45,5 +45,9 @@
         "request": "^2.88.2",
         "sudo-prompt": "^9.2.1",
         "tracer": "^1.1.6"
+    },
+    "devDependencies": {
+        "electron": "^11.0.0",
+        "electron-builder": "^24.12.0"
     }
 }
