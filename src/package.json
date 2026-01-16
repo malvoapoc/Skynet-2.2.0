@@ -38,7 +38,7 @@
     "dependencies": {
         "bluebird": "^3.7.2",
         "child_process": "^1.0.2",
-        "crypto-js": "^4.2.0",
+        "default-gateway": "^6.0.0",
         "electron-notarize": "^1.2.1",
         "electron-updater": "^6.6.2",
         "fs-extra": "^10.1.0",
