@@ -6,7 +6,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [windows-latest]   # 这里改成 windows-latest
         
     defaults:
       run:
@@ -21,37 +21,17 @@ jobs:
       with:
         node-version: 20
 
-    - name: Install Wine and dependencies (Ubuntu only)
-      if: ${{ matrix.os == 'ubuntu-latest' }}
-      run: |
-        sudo dpkg --add-architecture i386
-        sudo apt update
-        sudo apt install wine32
-        
+    # Windows 机器不需要安装 wine 和 i386 架构，相关步骤可以删除或注释掉
+    
     - name: Install dependencies
       run: |
-        chmod -R 755 ../*
         npm install
-           
-    - name: electron-builder on MacOS
-      if: ${{ matrix.os == 'macos-latest' }}
-      run: |
-        sudo target=darwin npx electron-builder build --mac --universal
-    
-    - name: Upload artifacts on MacOS
-      if: ${{ matrix.os == 'macos-latest' }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: mac
-        path: ./src/dist/*.dmg
         
     - name: electron-builder on Windows
-      if: ${{ matrix.os == 'ubuntu-latest' }}
       run: |
-        target=win npx electron-builder build --win --x32
+        npx electron-builder build --win
         
     - name: Upload artifacts on Windows
-      if: ${{ matrix.os == 'ubuntu-latest' }}
       uses: actions/upload-artifact@v4
       with:
         name: win
