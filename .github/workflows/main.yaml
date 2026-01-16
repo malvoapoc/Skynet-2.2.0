@@ -48,7 +48,7 @@ jobs:
     - name: electron-builder on Windows
       if: ${{ matrix.os == 'ubuntu-latest' }}
       run: |
-        target=win npx electron-builder build --win
+        target=win npx electron-builder build --win --x32
         
     - name: Upload artifacts on Windows
       if: ${{ matrix.os == 'ubuntu-latest' }}

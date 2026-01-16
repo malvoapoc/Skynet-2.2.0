@@ -1,14 +1,14 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "智连云 For Windows",
+    "description": "旧云 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
-    "productName": "智连云",
+    "productName": "旧云",
     "build": {
-        "productName": "智连云",
+        "productName": "旧云",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
