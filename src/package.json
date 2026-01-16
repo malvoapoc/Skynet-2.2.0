@@ -38,21 +38,13 @@
     "dependencies": {
         "bluebird": "^3.7.2",
         "child_process": "^1.0.2",
-        "default-gateway": "^6.0.0",
-        "electron-notarize": "^1.2.1",
+        "crypto-js": "^4.2.0",
         "electron-updater": "^6.6.2",
         "fs-extra": "^10.1.0",
         "http": "0.0.1-security",
-        "js-yaml": "^4.0.0",
         "path": "^0.12.7",
-        "ping": "^0.2.3",
         "request": "^2.88.2",
         "sudo-prompt": "^9.2.1",
-        "tcp-ping": "^0.1.1",
         "tracer": "^1.1.6"
-    },
-    "devDependencies": {
-        "electron": "^11.0.0",
-        "electron-builder": "^24.12.0"
     }
 }
