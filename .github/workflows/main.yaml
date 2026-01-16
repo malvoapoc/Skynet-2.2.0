@@ -32,18 +32,7 @@ jobs:
       run: |
         chmod -R 755 ../*
         npm install
-           
-    - name: electron-builder on MacOS
-      if: ${{ matrix.os == 'macos-latest' }}
-      run: |
-        sudo target=darwin npx electron-builder build --mac --universal
-    
-    - name: Upload artifacts on MacOS
-      if: ${{ matrix.os == 'macos-latest' }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: mac
-        path: ./src/dist/*.dmg
+
         
     - name: electron-builder on Windows
       if: ${{ matrix.os == 'ubuntu-latest' }}
