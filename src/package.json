@@ -7,7 +7,7 @@
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "旧云",
+        "productName": "萝卜圈",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
