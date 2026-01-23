@@ -7,7 +7,7 @@
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "萝卜圈",
+        "productName": "BGR3.0",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
