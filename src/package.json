@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
-    "version": "2.1.7",
+    "version": "2.1.8",
     "description": "Skynet For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "Antu Server",
+        "productName": "BestSSR",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
