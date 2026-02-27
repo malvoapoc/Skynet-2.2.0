@@ -1,13 +1,13 @@
 {
     "name": "Skynet",
-    "version": "2.1.8",
+    "version": "2.1.7",
     "description": "Skynet For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "红茶加速器",
+        "productName": "HK-BEUP",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
