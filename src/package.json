@@ -7,7 +7,7 @@
     "author": "",
     "license": "Apache-2.0",
     "build": {
-        "productName": "HK-BEUP",
+        "productName": "佛跳墙",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "extraResources": [
