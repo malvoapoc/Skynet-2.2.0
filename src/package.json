@@ -27,6 +27,10 @@
                 "to": "./"
             }
         ],
+        "files": [
+            "**/*",
+            "!scripts{,/**/*}"
+        ],
         "beforePack": "./scripts/before-pack-obfuscate.js",
         "win": {
             "icon": "../res/icon.ico",
