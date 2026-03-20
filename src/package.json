@@ -1,26 +1,30 @@
 {
-    "name": "Plteaz",
+    "name": "Skynet",
     "version": "2.2.0",
     "description": "App For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
-	"apihost": "https://code.spaceco.cc/host.php",
+    "apihost": "https://code.spaceco.cc/host.php",
     "scripts": {
         "obfuscate:app": "node ./scripts/before-pack-obfuscate.js --keep-obfuscated",
         "restore:app": "node ./scripts/before-pack-obfuscate.js --restore",
-        "pack": "electron-builder --dir",
-        "dist": "electron-builder"
+        "pack": "electron-builder --dir --win",
+        "dist": "electron-builder --win"
     },
     "build": {
         "productName": "软件云",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
+        "compression": "maximum",
         "extraResources": [
             {
                 "from": "../libs/win32",
-                "to": "./extra"
+                "to": "./extra",
+                "filter": [
+                    "**/*"
+                ]
             },
             {
                 "from": "../libs/elevate.exe",
@@ -29,14 +33,20 @@
         ],
         "files": [
             "**/*",
-            "!scripts{,/**/*}"
+            "!scripts{,/**/*}",
+            "!assets/fonts/.font-spider{,/**/*}"
         ],
         "beforePack": "./scripts/before-pack-obfuscate.js",
         "win": {
             "icon": "../res/icon.ico",
             "requestedExecutionLevel": "highestAvailable",
             "target": [
-                "nsis"
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "ia32"
+                    ]
+                }
             ]
         },
         "nsis": {

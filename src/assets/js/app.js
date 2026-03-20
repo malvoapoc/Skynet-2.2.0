@@ -236,7 +236,7 @@ const fs = require("fs")
 const net = require('net')
 const crypto = require('crypto')
 
-const _appname = "Plteaz"
+const _appname = "Skynet"
 const _app = remote.app
 const appConfigDir = path.join(_app.getPath('appData'), _appname)
 const configPath = path.join(appConfigDir, `config.yaml`)
