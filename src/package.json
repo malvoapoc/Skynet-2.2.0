@@ -10,8 +10,6 @@
     "scripts": {
         "obfuscate:app": "node ./scripts/before-pack-obfuscate.js --keep-obfuscated",
         "restore:app": "node ./scripts/before-pack-obfuscate.js --restore",
-        "pack": "electron-builder --dir --win",
-        "dist": "electron-builder --win"
     },
     "build": {
         "productName": "软件云",
