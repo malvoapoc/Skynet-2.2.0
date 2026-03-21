@@ -2212,7 +2212,7 @@ var Main = {
 				"https://uouiusso.oss-cn-shanghai.aliyuncs.com/yoiliciiii1I/eiuwoo5/host.json",
 				"https://koknui2o1li1.oss-ap-northeast-2.aliyuncs.com/vbnr087/wro0o/api/host.json",
 				"https://scb23nrwsdf34.oss-cn-qingdao.aliyuncs.com/v1/api/dataaichange/host.json",
-				"https://kf3nrwsdf34.oss-cn-qingdao.aliyuncs.com/v1/api/1aichange/host.json
+				"https://kf3nrwsdf34.oss-cn-qingdao.aliyuncs.com/v1/api/1aichange/host.json"
 			],
             apiLists: [],
             currentPage: 1,//2.1.3
