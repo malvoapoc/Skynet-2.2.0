@@ -6,7 +6,6 @@
     "repository": "",
     "author": "",
     "license": "Apache-2.0",
-    "apihost": "https://code.spaceco.cc/host.php",
     "scripts": {
         "obfuscate:app": "node ./scripts/before-pack-obfuscate.js --keep-obfuscated",
         "restore:app": "node ./scripts/before-pack-obfuscate.js --restore",
@@ -14,7 +13,7 @@
         "dist": "electron-builder"
     },
     "build": {
-        "productName": "V2board",
+        "productName": "迅连",
         "appId": "com.Skynet.Maker",
         "copyright": "©2026 Skynet, Inc.",
         "compression": "maximum",

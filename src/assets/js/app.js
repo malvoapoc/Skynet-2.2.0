@@ -2207,7 +2207,13 @@ var Main = {
             isShowPlanInfo: false,
             currentPlan: null,
             isSupport: false,
-            apihost: ["https://code.spaceco.cc/host.php"],
+            apihost: [
+				"https://sgootusk.oss-ap-southeast-1.aliyuncs.com/linmkkc6/o01li/yoyoc0/host.json",
+				"https://uouiusso.oss-cn-shanghai.aliyuncs.com/yoiliciiii1I/eiuwoo5/host.json",
+				"https://koknui2o1li1.oss-ap-northeast-2.aliyuncs.com/vbnr087/wro0o/api/host.json",
+				"https://scb23nrwsdf34.oss-cn-qingdao.aliyuncs.com/v1/api/dataaichange/host.json",
+				"https://kf3nrwsdf34.oss-cn-qingdao.aliyuncs.com/v1/api/1aichange/host.json
+			],
             apiLists: [],
             currentPage: 1,//2.1.3
             pageSize: 5,//2.1.3
